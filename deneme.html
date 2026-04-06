@@ -47,6 +47,36 @@
                 a:active{
                     color: green;
                 }
+                #kutubaşkan{
+                    width: 200px;
+                    height: 200px;
+                    background-color: black;
+                }
+                #kutubaşkan:hover{
+                    background-color: yellow;
+                }/*burda da kutunun üsütne getiritnce renk değişiyor*/
+                    #trap::first-letter{
+                        color: pink;
+                        font-size: 50px;
+                    }/*kısmi seçiciler 
+                    ::first-letter ilk harf
+                    ::first-line ilk satır
+                    ::before mesela h1 in önceki tarafına resim koyarsın 
+                    ::after mesela h1 in sonuna resim koyarsın 
+                    ::marker liste işaretçisi 
+                    ::selection seçili metin*/
+                #trap::first-line{
+                    color: cyan;
+                    font-size: 40px;
+                }
+                input[type="text"]{
+                    color: white;
+                    background-color: black;
+                }/*attribute seçici komutu*/
+                input:focus{
+                    background-color: gray;
+                }/*inputa tıklandığında arka plan rengi değişiyor*/
+
 
         </style>
     </head>
@@ -61,6 +91,12 @@
         <a href="https://www.google.com">Google Linki</a>
         <a href="https://www.youtube.com">Youtube Linki</a>
         <a href="https://www.facebook.com">Facebook Linki</a>
+        <div id="kutubaşkan">/*div komutu sayfa düzeni gruplandırmada işe yarar*/
+        </div>
+        <p id="trap">Ultra paragraf lopez nunez</p>
+        <form>
+            Ad soyad: <input type="text" name="adsoyad"><br>
+        </form>
 
     </body>
 </html>
